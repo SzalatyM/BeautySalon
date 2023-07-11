@@ -1,0 +1,14 @@
+﻿@model List<Service>
+
+<h1>Offer</h1>
+
+<ul>
+    @foreach (var service in Model)
+    {
+        <li>
+            <h3>@service.Name</h3>
+            <p>@service.Description</p>
+            <p>Price: @service.Price</p>
+        </li>
+    }
+</ul>
